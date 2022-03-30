@@ -36,4 +36,4 @@ python3 offpremise.py  $(echo https://github.com/ | dnsx -ns -a  -resp-only -sil
 ## Todo
 - list IP as input
 - update subnet list byscript
-
+- loadbalancer IP??
