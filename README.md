@@ -1,5 +1,5 @@
 # Offpremise
-Offpremise perform infrastructure fingerprinting to determine type of cloud/waf provider of an IP. it works by checking input IP and compare it to lists of subnet owned by cloud provider's. This list obtained either by official publication of the cloud provider, or by fetching from ipinfo (onlly few of them publish their subnet lists). Inspired by [cf-check](https://github.com/dwisiswant0/cf-check)
+Offpremise perform infrastructure fingerprinting to determine type of cloud/waf provider of an IP. it works by checking input IP and compare it to lists of subnet owned by cloud provider's. The Subnet list (mostly) only contain public IP reservable by third party such as IP for ec2 or IP utilize as cloudflare WAF. This list obtained either by official publication of the cloud provider, or by fetching from ipinfo (onlly few of them publish their subnet lists). Inspired by [cf-check](https://github.com/dwisiswant0/cf-check)
 
 
 The script purpose of use are:
