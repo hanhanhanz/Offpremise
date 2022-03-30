@@ -27,8 +27,11 @@ python3 offpremise.py 129.186.0.1
 ```
 
 ## Notes
-It do not accept domain as input, you can utilize [dnsx](https://github.com/projectdiscovery/dnsx) to find the domain's IP.
 An IP can categorize more than once in cloud provider's subnet list, the first one come out in the subnet list will be the one printed
+It do not accept domain as input, you can utilize [dnsx](https://github.com/projectdiscovery/dnsx) to find the domain's IP.
+```sh
+python3 offpremise.py  $(echo https://github.com/ | dnsx -ns -a  -resp-only -silent)
+```
 
 ## Todo
 - list IP as input
